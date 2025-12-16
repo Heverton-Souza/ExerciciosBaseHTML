@@ -3,12 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pagina inicial">
+    <meta name="description" content="pagina inicial"> 
     <meta name="keywords" content="palavra-chave1, palavra-chave2, palavra-chave3">
     <meta name="author" content="Heverton Souza">
-    <title>pagina inicial</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Página Inicial</title>
 </head>
-<body>
-    <a href="sumario.html">Ir para o sumário</a>
+<body class="bg-slate-100 text-slate-800">
+
+    <div class="flex min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="w-64 bg-slate-900 text-slate-100 flex flex-col">
+            <div class="p-6 border-b border-slate-700">
+                <h1 class="text-xl font-bold text-center">
+                    Dev Web
+                </h1>
+            </div>
+
+            <nav class="flex-1 p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="index.html"
+                           class="flex items-center gap-3 px-4 py-3 rounded-lg bg-slate-800 hover:bg-blue-600 transition">
+                            Página Principal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sumario.html"
+                           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition">
+                            Sumário
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html"
+                           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition">
+                           Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html"
+                           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition">
+                            Sobre
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="p-4 text-xs text-center text-slate-400 border-t border-slate-700">
+                © 2019 Lorem Ipsum
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="flex-1 flex flex-col">
+
+            <!-- Header -->
+            <header class="bg-slate-900 border-b border-slate-700 px-8 py-6">
+                <h2 class="text-3xl font-bold text-white">
+                    Curso Desenvolvimento Web
+                </h2>
+            </header>
+
+            <!-- Content -->
+            <section class="p-8">
+                <div class="bg-slate-900 border border-slate-700 rounded-2xl shadow-xl p-8">
+
+                    <h3 class="text-2xl font-semibold text-slate-300 mb-6 flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-blue-500 rounded-full"></span>
+                        Lorem Ipsum
+                    </h3>
+
+                    <div class="space-y-4 leading-relaxed text-slate-300 text-justify">
+                        <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in nunc neque. In in leo pretium, dictum purus eu, sodales metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus efficitur et tellus sed aliquet. Quisque pretium massa vitae quam accumsan dictum efficitur non arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer molestie ex faucibus, lacinia tortor quis, eleifend est. Duis eget feugiat nunc. Suspendisse imperdiet ex vel lorem tincidunt elementum. Aenean turpis turpis, maximus vel neque eu, faucibus malesuada ipsum. Phasellus arcu sem, mollis bibendum enim sollicitudin, rhoncus posuere ipsum. Suspendisse lacus purus, varius in cursus eget, faucibus pellentesque velit.
+                    </p>
+
+                    <p>
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec in suscipit eros, vel vulputate lectus. In lacinia tempor elit id mattis. Morbi sed commodo felis, ac rutrum tellus. Nullam facilisis metus non laoreet hendrerit. Vestibulum laoreet vehicula lorem. Nunc lectus metus, imperdiet sed rutrum vitae, feugiat eu neque. Duis aliquam neque laoreet enim fermentum porttitor.
+                    </p>
+
+                    <p>
+                    Fusce id blandit velit. Aliquam eleifend mollis nulla ut sollicitudin. Donec ac consequat ante, nec rhoncus leo. Vivamus in dui ut est dapibus sollicitudin. Morbi mi neque, suscipit et placerat eu, porttitor eget tortor. Donec ullamcorper, nisl sed dictum dignissim, dolor ligula convallis orci, nec egestas neque purus id dolor. Nam in euismod orci.
+                    </p>
+
+                    <p>
+                    Proin sed tincidunt leo. Fusce rhoncus mauris et turpis interdum pharetra. Praesent sollicitudin mauris dapibus sem malesuada tempor. Etiam at facilisis nisl, at viverra mi. Nullam tellus nibh, gravida eu viverra id, pellentesque ac risus. Nam ante risus, lobortis at ante vel, blandit mattis neque. Vestibulum at pulvinar lectus. Ut vehicula ante sagittis nibh facilisis rhoncus tincidunt a diam. Donec nec faucibus erat. Duis sit amet ipsum erat. Fusce porttitor massa tortor, et finibus mauris egestas at. Phasellus vitae aliquam orci. Sed tortor purus, fermentum eget lacus quis, malesuada molestie purus.
+                    </p>
+
+                    <p>
+                    Sed aliquam elit id diam ornare, sed egestas dui dapibus. Aenean vestibulum est id purus vestibulum finibus. Duis eget tortor lorem. Duis bibendum mauris nisi, id lacinia neque convallis non. Praesent cursus felis eget tellus tempus, at porttitor libero sodales. Fusce commodo mattis purus quis luctus. Donec tortor tortor, rutrum convallis felis sit amet, pellentesque tempor sem. Donec hendrerit, eros vel pretium molestie, magna augue cursus velit, feugiat elementum neque erat ac lectus. Morbi quis lacus nisl. Ut auctor ex et ornare sagittis. Cras ut magna finibus, aliquam orci sit amet, dignissim libero. Praesent urna orci, elementum vitae volutpat eget, imperdiet a neque. Etiam ac sem in felis imperdiet cursus sed eget dui. Vestibulum eu nisi a ante aliquet pretium.
+                    </p>
+                    </div>
+
+                </div>
+            </section>
+
+    </main>
+
+</div>
+
 </body>
 </html>
